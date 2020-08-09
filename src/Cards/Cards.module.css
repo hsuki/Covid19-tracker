@@ -1,0 +1,15 @@
+.Container {
+  width: 15%;
+  border-right: 1px solid lightgray;
+  /* border: 1px solid red; */
+}
+
+.GridContainer {
+  /* border: 1px solid green; */
+  height: 100%;
+}
+
+.Item {
+  /* border: 1px solid purple; */
+  height: 33.3333%;
+}

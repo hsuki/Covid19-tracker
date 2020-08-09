@@ -1,0 +1,12 @@
+.Container {
+  width: 85%;
+  /* border: 1px solid red; */
+}
+
+.Chart {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
