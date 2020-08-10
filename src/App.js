@@ -28,10 +28,11 @@ class App extends Component {
   render() {
     const currentData = this.state.currentData;
     const dailyData = this.state.dailyData;
+    const reversedDailyData = [...dailyData].reverse();
     return (
       <div className={classes.Container}>
         <Cards currentData={currentData} />
-        <Chart dailyData={dailyData} />
+        <Chart dailyData={reversedDailyData} />
       </div>
     );
   }

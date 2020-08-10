@@ -1,12 +1,18 @@
 .Container {
-  width: 85%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /* border: 1px solid red; */
 }
 
+.Option {
+  border: 1px solid blue;
+  margin-bottom: 75px;
+}
+
 .Chart {
-  /* border: 1px solid blue; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  width: 85%;
+  /* border: 1px solid red; */
 }
