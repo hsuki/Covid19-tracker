@@ -1,18 +1,15 @@
 .Container {
+  margin-top: 100px;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  /* border: 1px solid red; */
-}
-
-.Option {
-  border: 1px solid blue;
-  margin-bottom: 75px;
+  border: 1px solid red;
 }
 
 .Chart {
-  width: 85%;
-  /* border: 1px solid red; */
+  width: 90%;
+  border: 1px solid blue;
 }

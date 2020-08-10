@@ -9,7 +9,7 @@ const Chart = ({ dailyData }) => {
       className={classes.Chart}
       data={{
         labels: dailyData.map((dailyData) =>
-          new Date(dailyData.lastModified).toDateString()
+          new Date(dailyData.lastModified).toLocaleDateString()
         ),
         datasets: [
           {
@@ -34,7 +34,6 @@ const Chart = ({ dailyData }) => {
 
   return (
     <div className={classes.Container}>
-      <div className={classes.Option}>options</div>
       <div className={classes.Chart}>{lineChart}</div>
     </div>
   );

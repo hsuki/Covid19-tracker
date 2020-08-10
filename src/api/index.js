@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const fetchCurrentUS = async () => {
+export const fetchCurrent = async () => {
   const url = 'https://api.covidtracking.com/v1/us/current.json';
   try {
     const {
@@ -13,7 +13,7 @@ export const fetchCurrentUS = async () => {
   }
 };
 
-export const fetchDailyUS = async () => {
+export const fetchDaily = async () => {
   const url = 'https://api.covidtracking.com/v1/us/daily.json';
   try {
     const { data } = await axios.get(url);
@@ -23,6 +23,16 @@ export const fetchDailyUS = async () => {
       death: dailyData.death,
       lastModified: dailyData.lastModified,
     }));
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const fetchStates = async () => {
+  const url = 'https://api.covidtracking.com/v1/states/info.json';
+  try {
+    const { data } = await axios.get(url);
+    return data.map((data) => data.state);
   } catch (error) {
     console.log(error);
   }
