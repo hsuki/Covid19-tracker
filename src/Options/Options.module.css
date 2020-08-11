@@ -1,0 +1,17 @@
+.Container {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  padding: 15px 0;
+}
+
+.Box {
+  width: 10%;
+  /* border: 1px solid blue; */
+}
+
+.FormControl {
+  width: 100%;
+  display: flex;
+}
