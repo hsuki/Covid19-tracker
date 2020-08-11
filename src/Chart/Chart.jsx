@@ -3,7 +3,8 @@ import classes from './Chart.module.css';
 
 import { Line, Bar, HorizontalBar } from 'react-chartjs-2';
 
-const Chart = ({ dailyData }) => {
+const Chart = ({ dailyData, currentStateData }) => {
+  console.log(currentStateData);
   const lineChart = (
     <Line
       className={classes.Chart}
@@ -29,12 +30,51 @@ const Chart = ({ dailyData }) => {
           },
         ],
       }}
+      options={{
+        legend: { display: false },
+        title: {
+          display: true,
+          text: `Current State of COVID-19 in the United States`,
+        },
+      }}
     />
   );
 
+  const barChart = currentStateData ? (
+    <Bar
+      data={{
+        labels: ['Confirmed', 'Recovered', 'Deaths'],
+        datasets: [
+          {
+            label: 'People',
+            backgroundColor: [
+              'rgba(0, 0, 255, 0.5)',
+              'rgba(0, 255, 0, 0.5)',
+              'rgba(255, 0, 0, 0.5)',
+            ],
+            data: [
+              currentStateData.positive,
+              currentStateData.recovered,
+              currentStateData.death,
+            ],
+          },
+        ],
+      }}
+      options={{
+        legend: { display: false },
+        title: {
+          display: true,
+          text: `Current State of COVID-19 in ${currentStateData.state}`,
+        },
+      }}
+    />
+  ) : null;
+
   return (
     <div className={classes.Container}>
-      <div className={classes.Chart}>{lineChart}</div>
+      <div className={classes.Chart}>
+        {currentStateData.positive ? barChart : lineChart}
+      </div>
     </div>
   );
 };

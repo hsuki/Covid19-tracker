@@ -37,3 +37,20 @@ export const fetchStates = async () => {
     console.log(error);
   }
 };
+
+export const fetchState = async (state) => {
+  const url = `https://api.covidtracking.com/v1/states/${state}/current.json`;
+  try {
+    const {
+      data: { positive, recovered, death },
+    } = await axios.get(url);
+
+    return { positive, recovered, death };
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+// https://api.covidtracking.com/v1/states/{state}/current.json
+
+// https://api.covidtracking.com/v1/states/{state}/daily.json

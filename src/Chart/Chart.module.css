@@ -6,10 +6,10 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .Chart {
   width: 90%;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }

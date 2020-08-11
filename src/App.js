@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import classes from './App.module.css';
-import cx from 'classnames';
+// import cx from 'classnames';
 
 import Options from './Options/Options';
 import Cards from './Cards/Cards';
 import Chart from './Chart/Chart';
-import { fetchCurrent, fetchDaily, fetchStates } from './api';
+import { fetchCurrent, fetchDaily, fetchStates, fetchState } from './api';
 
 class App extends Component {
   state = {
     currentData: {},
     dailyData: [],
     statesData: [],
+    currentStateData: {},
   };
 
   async componentDidMount() {
@@ -30,18 +31,36 @@ class App extends Component {
     });
   }
 
+  handleChange = async (state) => {
+    const data = await fetchState(state);
+    this.setState({
+      currentStateData: {
+        state: state,
+        positive: data.positive,
+        recovered: data.recovered,
+        death: data.death,
+      },
+    });
+  };
+
   render() {
     const currentData = this.state.currentData;
     const dailyData = this.state.dailyData;
     const reversedDailyData = [...dailyData].reverse();
+    const states = this.state.statesData;
+    const currentStateData = this.state.currentStateData;
+
     return (
       <div className={classes.Root}>
         <div className={classes.Left}>
           <Cards currentData={currentData} />
         </div>
         <div className={classes.Right}>
-          <Options />
-          <Chart dailyData={reversedDailyData} />
+          <Options handleChange={this.handleChange} states={states} />
+          <Chart
+            dailyData={reversedDailyData}
+            currentStateData={currentStateData}
+          />
         </div>
       </div>
     );
