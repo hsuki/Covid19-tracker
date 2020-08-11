@@ -4,7 +4,7 @@ import classes from './Chart.module.css';
 import { Line, Bar, HorizontalBar } from 'react-chartjs-2';
 
 const Chart = ({ dailyData, currentStateData }) => {
-  console.log(currentStateData);
+  // console.log(currentStateData);
   const lineChart = (
     <Line
       className={classes.Chart}

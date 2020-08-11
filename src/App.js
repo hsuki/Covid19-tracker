@@ -13,6 +13,7 @@ class App extends Component {
     dailyData: [],
     statesData: [],
     currentStateData: {},
+    isNational: true,
   };
 
   async componentDidMount() {
@@ -33,6 +34,7 @@ class App extends Component {
 
   handleChange = async (state) => {
     const data = await fetchState(state);
+
     this.setState({
       currentStateData: {
         state: state,
@@ -41,6 +43,10 @@ class App extends Component {
         death: data.death,
       },
     });
+
+    state
+      ? this.setState({ isNational: false })
+      : this.setState({ isNational: true });
   };
 
   render() {
@@ -49,14 +55,18 @@ class App extends Component {
     const reversedDailyData = [...dailyData].reverse();
     const states = this.state.statesData;
     const currentStateData = this.state.currentStateData;
-
+    const isNational = this.state.isNational;
     return (
       <div className={classes.Root}>
         <div className={classes.Left}>
           <Cards currentData={currentData} />
         </div>
         <div className={classes.Right}>
-          <Options handleChange={this.handleChange} states={states} />
+          <Options
+            handleChange={this.handleChange}
+            states={states}
+            isNational={isNational}
+          />
           <Chart
             dailyData={reversedDailyData}
             currentStateData={currentStateData}
