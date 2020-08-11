@@ -12,7 +12,7 @@ const CardComponent = ({
 }) => {
   return (
     <div className={classes.Container}>
-      <Box marginTop={2} marginBottom={13}>
+      <Box marginTop={4} marginBottom={11}>
         <Typography
           style={{ marginTop: '15px' }}
           color='textSecondary'
@@ -27,7 +27,7 @@ const CardComponent = ({
           {value ? parseInt(value, 10).toLocaleString() : 'N/A'}
         </Typography>
       </Box>
-      <Box marginTop={12}>
+      <Box marginTop={13}>
         <Typography color='textSecondary' variant='h6'>
           {new Date(lastModified).toDateString()}
         </Typography>
