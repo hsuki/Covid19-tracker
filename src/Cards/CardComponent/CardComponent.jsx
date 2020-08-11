@@ -1,6 +1,8 @@
 import React from 'react';
 import classes from './CardComponent.module.css';
 import { Box, Typography } from '@material-ui/core';
+import CountUp from 'react-countup';
+
 const CardComponent = ({
   cardTitle,
   value,
@@ -22,7 +24,7 @@ const CardComponent = ({
       <Box>
         <Typography variant='h3' component='h2'>
           {/* <CountUp start={0} end={value} duration={0.7} separator=',' /> */}
-          {parseInt(value, 10).toLocaleString()}
+          {value ? parseInt(value, 10).toLocaleString() : 'N/A'}
         </Typography>
       </Box>
       <Box marginTop={12}>
@@ -32,7 +34,6 @@ const CardComponent = ({
       </Box>
       <Box marginTop={3}>
         <Typography variant='body1' component='p'>
-          {/* {cardSubtitle} */}
           {description}
         </Typography>
       </Box>

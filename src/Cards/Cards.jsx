@@ -4,7 +4,7 @@ import CardComponent from './CardComponent/CardComponent';
 import { Divider, Grid } from '@material-ui/core';
 
 const Cards = ({
-  currentData: { positive, recovered, death, lastModified },
+  currentUsData: { positive, recovered, death, lastModified },
 }) => {
   return (
     <Grid
