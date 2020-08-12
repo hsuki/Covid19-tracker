@@ -71,9 +71,10 @@
 I wanted to create my own version of a covid-19 tracker inspired by https://www.youtube.com/watch?v=khJlrj3Y6Ls
 
 Here's why:
-* To practice building frontend applications using ReactJS
-* To build fundamental understanding of working with REST API's
-* To practice content layout and displaying data to users
+* Keep up-to-date with the current national statistics
+* Practice building frontend applications using ReactJS
+* Build fundamental understanding of working with REST API's
+* Practice content layout and displaying data to users
 
 ### Built With
 * [ReactJS](https://reactjs.org/)
