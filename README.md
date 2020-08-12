@@ -140,12 +140,10 @@ Project Link: [https://github.com/hsuki/Covid19-tracker](https://github.com/hsuk
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [axios](https://www.npmjs.com/package/axios)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
+* [Axios](https://www.npmjs.com/package/axios)
 * [Material UI](https://material-ui.com/)
 * [Chart.js](https://www.chartjs.org/)
-* [react-chartjs-2](https://www.npmjs.com/package/react-chartjs-2)
+* [React-chartjs-2](https://www.npmjs.com/package/react-chartjs-2)
 
 
 
