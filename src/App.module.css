@@ -30,3 +30,33 @@ body {
   /* border: 1px solid blue; */
   width: 85%;
 }
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 1024px) {
+  .Root {
+    flex-direction: column;
+  }
+
+  .Left {
+    width: 100%;
+  }
+
+  .Right {
+    width: 100%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1025px) and (max-width: 1700px) {
+  .Root {
+    flex-direction: column;
+  }
+
+  .Left {
+    width: 100%;
+  }
+
+  .Right {
+    width: 100%;
+  }
+}

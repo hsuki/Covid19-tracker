@@ -7,12 +7,7 @@ const Cards = ({
   currentUsData: { positive, recovered, death, lastModified },
 }) => {
   return (
-    <Grid
-      container
-      spacing={0}
-      direction='column'
-      className={classes.Container}
-    >
+    <Grid container spacing={0} className={classes.Container}>
       <Grid item className={classes.Item}>
         <CardComponent
           cardTitle='Confirmed'
@@ -21,7 +16,7 @@ const Cards = ({
           description='Number of active cases'
           color='#0000ff'
         />
-        <Divider />
+        {/* <Divider /> */}
       </Grid>
       <Grid item className={classes.Item}>
         <CardComponent
@@ -30,7 +25,7 @@ const Cards = ({
           lastModified={lastModified}
           description='Number of recoveries'
         />
-        <Divider />
+        {/* <Divider /> */}
       </Grid>
       <Grid item className={classes.Item}>
         <CardComponent

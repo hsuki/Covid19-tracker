@@ -1,9 +1,22 @@
 .Container {
-  border-right: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
 .Item {
-  /* border: 1px solid purple; */
+  /* border: 1px solid pink; */
   height: 33.3333%;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1700px) {
+  .Container {
+    flex-direction: row;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .Item {
+    height: 100%;
+    width: 33.333%;
+  }
 }
