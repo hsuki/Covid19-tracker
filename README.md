@@ -38,7 +38,7 @@
   <p align="center">
     A basic webapp to display current Covid-19 stats in the United States
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/hsuki/Covid19-tracker/blob/master/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://cvd19-tracker.netlify.app/">View Demo</a>
