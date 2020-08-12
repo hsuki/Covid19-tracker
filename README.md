@@ -80,8 +80,6 @@ Here's why:
 
 ### Built With
 * [ReactJS](https://reactjs.org/)
-* [Covid-19 API](https://covidtracking.com/data/api)
-
 
 
 <!-- GETTING STARTED -->
