@@ -71,7 +71,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Covid-19 demo][product-screenshot]](https://github.com/hsuki/Covid19-tracker/blob/master/src/img/covid-tracker-demo.png)
+![Covid-19 demo][product-screenshot]
 
 I wanted to create my own version of a covid-19 tracker inspired by https://www.youtube.com/watch?v=khJlrj3Y6Ls
 
@@ -195,4 +195,4 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: src/img/covid-tracker-demo.png
