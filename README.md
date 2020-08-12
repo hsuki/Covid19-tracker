@@ -59,7 +59,6 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-* [Usage](#usage)
 * [Roadmap](#roadmap)
 * [License](#license)
 * [Contact](#contact)
@@ -111,19 +110,10 @@ git clone https://github.com/hsuki/Covid19-tracker.git
 ```sh
 npm install
 ```
-4. start local development server
+4. Start local development server
 ```sh
 npm start
 ```
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 
 
@@ -152,18 +142,12 @@ Project Link: [https://github.com/hsuki/Covid19-tracker](https://github.com/hsuk
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [axios](https://www.npmjs.com/package/axios)
 * [Img Shields](https://shields.io)
 * [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
-
+* [Material UI](https://material-ui.com/)
+* [Chart.js](https://www.chartjs.org/)
+* [react-chartjs-2](https://www.npmjs.com/package/react-chartjs-2)
 
 
 
