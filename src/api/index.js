@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const fetchCurrent = async () => {
+export const fetchCurrentUS = async () => {
   const url = 'https://api.covidtracking.com/v1/us/current.json';
   try {
     const {
@@ -13,7 +13,7 @@ export const fetchCurrent = async () => {
   }
 };
 
-export const fetchDaily = async () => {
+export const fetchDailyUS = async () => {
   const url = 'https://api.covidtracking.com/v1/us/daily.json';
   try {
     const { data } = await axios.get(url);
@@ -38,14 +38,29 @@ export const fetchStates = async () => {
   }
 };
 
-export const fetchState = async (state) => {
+export const fetchCurrentState = async (state) => {
   const url = `https://api.covidtracking.com/v1/states/${state}/current.json`;
   try {
     const {
-      data: { positive, recovered, death },
+      data: { positive, recovered, death, dateModified },
     } = await axios.get(url);
 
-    return { positive, recovered, death };
+    return { positive, recovered, death, dateModified };
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const fetchDailyState = async (state) => {
+  const url = `https://api.covidtracking.com/v1/states/${state}/daily.json`;
+  try {
+    const { data } = await axios.get(url);
+    return data.map((dailyData) => ({
+      positive: dailyData.positive,
+      recovered: dailyData.recovered,
+      death: dailyData.death,
+      lastModified: dailyData.dateModified,
+    }));
   } catch (error) {
     console.log(error);
   }

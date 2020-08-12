@@ -1,18 +1,13 @@
 import React from 'react';
 import classes from './Cards.module.css';
 import CardComponent from './CardComponent/CardComponent';
-import { Divider, Grid } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 
 const Cards = ({
-  currentData: { positive, recovered, death, lastModified },
+  currentUsData: { positive, recovered, death, lastModified },
 }) => {
   return (
-    <Grid
-      container
-      spacing={0}
-      direction='column'
-      className={classes.Container}
-    >
+    <Grid container spacing={0} className={classes.Container}>
       <Grid item className={classes.Item}>
         <CardComponent
           cardTitle='Confirmed'
@@ -21,7 +16,6 @@ const Cards = ({
           description='Number of active cases'
           color='#0000ff'
         />
-        <Divider />
       </Grid>
       <Grid item className={classes.Item}>
         <CardComponent
@@ -30,7 +24,6 @@ const Cards = ({
           lastModified={lastModified}
           description='Number of recoveries'
         />
-        <Divider />
       </Grid>
       <Grid item className={classes.Item}>
         <CardComponent
