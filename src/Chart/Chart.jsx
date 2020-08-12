@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Chart.module.css';
 
-import { Line, HorizontalBar } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 
 const Chart = ({ dailyData }) => {
   const lineChart = (
