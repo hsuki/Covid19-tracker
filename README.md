@@ -29,8 +29,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://raw.githubusercontent.com/hsuki/Covid19-tracker/master/src/img/image.png">
-    <img src="src/img/image.png" alt="Logo" width="80" height="120">
+  <a href="https://raw.githubusercontent.com/hsuki/Covid19-tracker/master/src/img/logo2.png">
+    <img src="src/img/logo2.png" alt="Logo" width="80" height="120">
   </a>
   
   <h3 align="center">COVID-19 Tracker</h3>
