@@ -75,6 +75,7 @@ Here's why:
 * Practice building frontend applications using ReactJS
 * Build fundamental understanding of working with REST API's
 * Practice content layout and displaying data to users
+* Learn how to deploy site to online hosting services
 
 ### Built With
 * [ReactJS](https://reactjs.org/)
