@@ -135,6 +135,7 @@ Jon Ham - jondwoo@gmail.com
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
+* [API](https://covidtracking.com/data/api)
 * [Axios](https://www.npmjs.com/package/axios)
 * [Material UI](https://material-ui.com/)
 * [Chart.js](https://www.chartjs.org/)
