@@ -132,9 +132,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Jon Ham - jondwoo@gmail.com
 
-Project Link: [https://github.com/hsuki/Covid19-tracker](https://github.com/hsuki/Covid19-tracker)
-
-
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
